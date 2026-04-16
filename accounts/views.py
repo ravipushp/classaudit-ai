@@ -1,5 +1,5 @@
 import logging
-import face_recognition
+# import face_recognition
 import base64
 from django.shortcuts import render, redirect
 from django.http import JsonResponse, HttpResponse
@@ -9,9 +9,9 @@ from django.utils import timezone
 import datetime
 import calendar
 import os 
-import numpy as np 
+import numpy as np
 import cv2 
-from .utils.face_embedding import get_embedding 
+# from .utils.face_embedding import get_embedding 
 from .utils.face_matcher import match_face
 from django.conf import settings 
 from django.contrib.auth import authenticate, login, logout as auth_logout 
