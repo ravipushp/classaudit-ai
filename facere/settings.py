@@ -26,7 +26,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY: Set DEBUG=False in production .env
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost,127.0.0.1', cast=Csv())
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -188,3 +188,4 @@ if not DEBUG:
 
     # Clickjacking protection
     X_FRAME_OPTIONS = 'DENY'
+    STATIC_ROOT = 'staticfiles'
